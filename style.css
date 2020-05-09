@@ -1,0 +1,366 @@
+
+*{
+margin:0;
+padding:0;
+}
+
+body{
+ height: 100vh 
+}
+/* ------------------mobile design------------------*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-areas: 
+    "header "
+    "images"
+    "footer ";
+}
+
+.header{
+  grid-area: header;
+  display:flex;
+}
+
+.header #logo{
+  height: 7rem;
+  width: auto;
+  padding-top: 0; 
+}
+h1{
+  cursor: pointer;
+  opacity: 0.6 ;
+}
+.images{
+  grid-area: images;
+//background-color: #f2f2f2;  
+}
+  
+  img{
+   
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: ;
+  }
+
+.footer{
+  display: flex;
+  grid-area: footer;
+  //background-color: #f2f2f2;
+
+}
+.footer i{
+align-self: flex-end;
+
+padding-bottom: 15%;
+opacity: 0.5;
+cursor: pointer;
+}
+h4{
+  
+  letter-spacing: 0.1rem;
+  padding-left: 10rem;
+  
+}
+
+
+
+@media (max-width: 633px) {
+  .mainMenu {
+    display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*ipad and lager media css*/
+    
+  }
+@media (min-width: 634px) {
+  .hamBurger {
+    display: none;
+  }
+  .mainMenu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    padding-right:2rem;
+    align-items: center;
+  }
+  li a{
+    display: flex;
+    text-decoration: none;
+    text-align: left;
+    justify-content: space-between;
+    padding-right: 0.3rem;
+    color: grey;
+    letter-spacing: 0.2em;
+ }
+ images{
+  grid-area: images;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+ 
+/*
+}
+.mainMenu {
+  float: right;
+}
+
+.mainMenu li {
+  display: inline;
+}
+.mainMenu a {
+  text-decoration: none;
+  color: black;
+  padding: 1.2rem;
+  font-family: sans-serif;
+}
+.fixed-nav .mainMenu {
+  position: fixed right;
+  z-index: -1;
+}
+
+.hamBurger {
+  float: right;
+}
+
+/*
+ /*img{
+   margin-top: 100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   z-index: -1;
+ }
+
+
+}
+
+
+h1{
+  margin-top: 10px;
+
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poiret One', cursive, serif;
+  
+    
+  background-color: transparent;
+  justify-content: space-around;
+  width: 55%;
+  margin-left: 60%
+
+}
+/*
+#nav li{
+  list-style: none;
+  float:right;
+  background:none;
+  text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 600;
+  border:4px;
+  padding: 10%;
+  margin-left: 10%;
+  align-items: left;
+  color: #d9d9d9;
+  display: inline;
+}
+/*
+nav {
+  width: 100%;
+  background-color: transparent;
+  text-align: right;
+  margin:  auto;
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  
+}
+
+.fixed-nav nav {
+  position: fixed;
+  top:0;
+  z-index: 1;
+  list-style: none;
+  float:right;
+  background:none;
+  text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 600;
+  border:4px;
+  padding: ;
+  margin-left: ;
+  align-items: left;
+  color: #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poiret One', cursive, serif;
+  
+    
+  background-color: transparent;
+  justify-content: space-around;
+  width: 55%;
+  margin-left: 60%
+  
+  list-style: none;
+  float:right;
+  background:none;
+  text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 600;
+  border:4px;
+  padding: 10%;
+  margin-left: 10%;
+  align-items: left;
+  color: #d9d9d9;
+
+
+/*
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+#homepage {
+  background: url("images/sanddues.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin:0;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive, serif;
+  font-size: 70px;
+  background: transparent;
+  text-align: center;
+  color: #d9d9d9;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 0;
+}
+h3 {
+  font-family: 'Poiret One', cursive, serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+/* #about-page {
+  background: url("images/campervan.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  background-attachment: fixed;
+} */
+
+/*
+#about-page {
+  background-color:white;
+
+}
+
+.header{
+  font-family: 'Poiret One', cursive, serif;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.heading {
+  font-family: 'Poiret One', cursive, serif;
+  font-size: 70px;
+  font-weight: bold;
+  text-align-last: center;
+  margin: 10px;
+}
+
+.box1 {
+    background: url(images/campervan.jpeg);
+    /* background-repeat: no-repeat; 
+    width: 593px;
+    height: 400px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position-y: center;
+
+}
+
+.box2 {
+  font-family: 'Poiret One', cursive, serif;
+  text-align: left;
+  font-size: 19x;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+  margin-left: 200px;
+  margin-right: 200px;
+  background:white;
+  text-align-last: center;
+  width: auto;
+  
+}
+
+.box3 {
+  background: url(images/humpyparis.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+  margin: 0 auto;
+ 
+}
+
+.box4 { 
+
+  font-family: 'Poiret One', cursive, serif;
+  font-size: 20px;
+  padding: 20 30px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  text-size-adjust: auto;
